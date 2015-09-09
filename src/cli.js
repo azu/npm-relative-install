@@ -12,13 +12,16 @@ export function runAsync(args) {
             resolve(options.generateHelp());
         } else {
             var pkgPath = path.resolve(process.cwd(), currentOptions.package);
-            var installDirPath = path.resolve(process.cwd(), currentOptions.installPath);
+            if (currentOptions.installDir == null) {
+                reject(new Error("should be set --installDir directory."));
+            }
+            var installDirPath = path.resolve(process.cwd(), currentOptions.installDir);
             var pkg = require(pkgPath);
-            return install(pkg, installDirPath, currentOptions.diffType).catch(function (error) {
-                console.log(error.message);
-                console.log(error.stack);
+            install(pkg, installDirPath, currentOptions.diffType).then(result => {
+                resolve("Success!");
+            }).catch(function (error) {
+                reject(error);
             });
         }
-        return resolve(options.generateHelp());
     });
 }

@@ -22,11 +22,10 @@ export default optionator({
             default: "./package.json"
         },
         {
-            option: "installPath",
+            option: "installDir",
             alias: "d",
             type: "path::String",
-            description: "install directory path.",
-            required: true
+            description: "install directory path."
         },
         {
             option: "diffType",

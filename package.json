@@ -12,7 +12,12 @@
   },
   "version": "1.0.0",
   "description": "npm relative version install command.",
-  "main": "index.js",
+  "main": "lib/install.js",
+  "files": [
+    "lib",
+    "src",
+    "bin"
+  ],
   "bin": {
     "npm-relative-install": "bin/cmd.js"
   },
