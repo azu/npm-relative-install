@@ -21,15 +21,23 @@ Command line tool that install a relative version of a package.
 
 ## Example
 
-To install the "patch" old package.
+To install the "patch" **older** package.
+
+For example, `package.json` is npm@2.4.1's.
 
 ```sh
 npm-relative-install ./package.json -d /path/to/install/dir/
+# /path/to/install/dir/node_module/<npm@2.4.0>
+# Installed npm@2.4.0 !!
 ```
+
+--diffType: "patch" -> "minor" -> "major"
+
+
 
 ## Tests
 
-- [ ] Write How to Tests
+    npm test
 
 ## Contributing
 
