@@ -11,7 +11,7 @@
     "url": "https://github.com/azu/npm-relative-install/issues"
   },
   "version": "1.0.0",
-  "description": "npm relative version install command.",
+  "description": "npm install relative version command line tools.",
   "main": "lib/install.js",
   "files": [
     "lib",
