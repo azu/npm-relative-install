@@ -1,0 +1,37 @@
+{
+  "name": "npm-relative-install",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azu/npm-relative-install.git"
+  },
+  "email": "azuciao@gmail.com",
+  "homepage": "https://github.com/azu/npm-relative-install",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/azu/npm-relative-install/issues"
+  },
+  "version": "1.0.0",
+  "description": "npm relative version install command.",
+  "main": "index.js",
+  "bin": {
+    "npm-relative-install": "bin/cmd.js"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib --source-maps",
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "prepublish": "npm run build",
+    "test": "mocha"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "",
+  "dependencies": {
+    "npm": "^2.14.2",
+    "npm-relative-version": "^1.0.1",
+    "optionator": "^0.6.0"
+  }
+}

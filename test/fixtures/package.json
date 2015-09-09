@@ -1,0 +1,18 @@
+{
+  "name": "cat",
+  "description": "cat will read the contents of an url",
+  "keywords": [
+    "cat",
+    "util",
+    "request"
+  ],
+  "version": "0.2.0",
+  "homepage": "https://github.com/mafintosh/cat",
+  "author": {
+    "name": "Mathias Buus Madsen",
+    "email": "mathiasbuus@gmail.com"
+  },
+  "bin": {
+    "cat": "bin.js"
+  }
+}
