@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/azu/npm-relative-install/issues"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "npm install relative version command line tools.",
   "main": "lib/install.js",
   "files": [
